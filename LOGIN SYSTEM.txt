@@ -1,0 +1,25 @@
+//LOGIN SYSTEM
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+    char username[50];
+    char password[50];
+
+    char user[50]="mehmood";
+    char pass[50]="2380237";
+
+    printf("enter user name : ");
+     scanf("%s",&username);
+    printf("enter your password : ");
+     scanf("%s",&password);
+
+   if(strcmp(username,user)==0 && strcmp(password,pass)==0){
+    printf("congrats\n");
+   }else{
+    printf("invalid");
+   }
+
+    return 0;
+}

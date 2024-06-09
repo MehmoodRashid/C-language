@@ -1,0 +1,31 @@
+//PROGRAM TO FIND PRIME NUMBER
+#include<stdio.h>
+#include<stdbool.h>
+int main()
+{
+   int num;
+    printf("Enter A Positive Number\n");
+     scanf("%d",&num);
+    bool isprime = true;
+
+    if (num<=1)
+    {
+        isprime = false;
+    }else {
+        int i=2;
+        while(i<=num/2)
+    {
+         if (num%i==0){
+            isprime = false;
+            break;
+                          }
+          i++;
+    }
+    }
+      if(isprime){
+        printf("%d is a prime number\n",num);
+      }else{
+        printf("%d is not a prime number\n",num);
+      }
+    return 0;
+}

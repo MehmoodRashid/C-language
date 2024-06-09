@@ -1,0 +1,62 @@
+/*week 13 imp.
+questions for interview
+
+*/
+/*#include<stdio.h>
+int main()
+{
+    printf("size of int=%d\n",sizeof(int));
+    printf("size of char=%d\n",sizeof(char));
+    printf("size of float=%d\n",sizeof(float));
+
+}*/
+
+/*#include<stdio.h>
+int main()
+{
+    char a[]="mehmood rashid";//one additional space is null character
+    int length=sizeof(a) / sizeof(a[0]);
+    printf("%d\n",length);
+    int length2 = *(&a+1)-a;
+    printf("%d\n",length2);
+    return 0;
+}
+*/
+
+#include<stdio.h>
+int count_spaces(const char s[])
+{
+    int count,i;
+    count=0;
+    for(i=0; s[i]!='\0'; i++)
+        if(s[i]==' ') count++;
+       return count;
+}
+int main()
+{
+    char a[]="m e h m o o d";
+    int spaces;
+    spaces=count_spaces(a);
+    printf("number of spaces = %d ",spaces);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

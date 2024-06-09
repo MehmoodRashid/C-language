@@ -1,0 +1,89 @@
+#include<stdio.h>
+int main()
+{
+    /*  int num;
+      printf("Enter a number to find factorial\n");
+      scanf("%d",&num);
+       if(num<0){
+          printf("impossible \n");
+       }else{
+        int fact=1;
+        int i=1;
+        while(i<=num)
+        {
+            fact=fact*i;
+            i++;
+        }
+       printf("factorial is %d\n",fact);
+       } */
+
+    /*   int a;
+       scanf("%d",&a);
+       for(int i=1; i<=a; i++)
+          printf("%d\n",i); */
+
+    // NESTED LOOPS//
+
+    /*  int rows;
+      printf("Enter number to print triangles \n");
+      scanf("%d",&rows);
+      for(int i=1; i<=rows; i++){
+          for(int j=1; j<=i; j++){
+              printf("*");
+          }
+          printf("\n");
+      }*/
+
+    /*  int rows;
+      printf("Enter number to print triangles \n");
+      scanf("%d",&rows);
+      for(int i=rows; i>=1; i--)
+      {
+          for(int j=1; j<=i; j++)
+          {
+              printf("*");
+          }
+          printf("\n");
+      } */
+    //pyramid
+    int i,j, rows;
+    printf("Enter number to print triangles \n");
+    scanf("%d",&rows);
+    for(i=1; i<=rows; i++)
+    {
+        for(j=1; j<=rows-i; j++)
+        {
+            printf("_");
+        }
+
+        for(j=1; j<=2*i-1; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    for(i=rows; i>=1; i--)
+    {
+        for(j=1; j<=rows-i; j++)
+        {
+            printf("_");
+        }
+
+        for(j=1; j<=2*i-1; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+

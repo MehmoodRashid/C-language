@@ -1,0 +1,19 @@
+//table chart
+#include<stdio.h>
+int main(void)
+{
+int num,result,counter,end;
+printf("ENTER NUMBER FOR MULTIPLICATION\n ");
+ scanf("%d",&num);
+printf("Enter starting value \n");
+ scanf("%d",&counter);
+printf("ending value \n");
+ scanf("%d",&end);
+
+while(counter<=end){
+     result = num * counter;
+     printf("%d * %d = %d\n",num,counter,result);
+     counter++;
+}
+ return 0;
+}

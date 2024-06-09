@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+ int i,j,max,min;
+    printf("ENTER VALU OF i \n");
+     scanf("%d",&i);
+    printf("ENTER VALU OF j \n");
+     scanf("%d",&j);
+    max= (i>j)? i : j;
+    min= (i<j)? i : j;
+     printf("max= %d\n", max);
+      printf("min= %d",min);  
+
+   return 0;
+}

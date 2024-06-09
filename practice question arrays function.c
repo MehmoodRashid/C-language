@@ -215,7 +215,7 @@ int main(void)
     }
     return 0;
 }*/
-/*#include<stdio.h>
+#include<stdio.h>
 int main()
 {
     int size,j,i;
@@ -235,19 +235,8 @@ int main()
     }
 
     return 0;
-}*/
-#include<stdio.h>
-int main()
-{
-    int size,i,j;
-    printf("enter size of array: ");
-    scanf("%d",&size);
-    int array[size];
-     printf("")
-
-
-    return 0;
 }
+
 
 
 

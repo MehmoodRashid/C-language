@@ -1,0 +1,29 @@
+//ARRAYS
+#include<stdio.h>
+int main()
+{
+    int grades[5];
+    int i;//input variable
+    int sum=0;
+    float avg;
+
+    printf("Enter grades of students\n");
+     for(i=0; i<5; i++){
+        printf("grades[%d]= ",i);
+         scanf("%d",&grades[i]);
+        printf("\n");
+     }
+     printf("the provided grades of the students are:\n");
+     for(i=0; i<5; i++){
+        printf("students grades[%d]=%d\n",i,grades[i]);
+     }
+     printf("avg grades of the students:\n");
+     for(i=0; i<5; i++){
+        sum+=grades[i];
+     }
+     avg= sum/5;
+     printf("avg= %f",avg);
+
+
+    return 0;
+}

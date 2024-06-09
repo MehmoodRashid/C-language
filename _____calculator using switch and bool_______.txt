@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<stdbool.h>
+int main()
+{
+//_____calculator using switch_______
+
+    float a,b,result;
+    bool valid = true;
+    char oper;
+    printf("Enter expression (a+b) +,-,*,/,%");
+     scanf("%f%c%f",&a,&oper,&b);
+
+    switch(oper)
+     {
+       case '+':
+        result=a+b;
+        break;
+       case '-':
+        result=a-b;
+        break;
+       case '*':
+        result=a*b;
+        break;
+       case '/':
+        result=a/b;
+        break;
+       case '%':
+        result=(int)a % (int)b;
+        break;
+  default:
+        valid=false;
+     }
+     if (valid){
+                printf("Result = %.4f\n",result);
+    }else{
+                printf("Invalid expression");
+    }
+
+
+
+    return 0;
+}

@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+int rows,space,star;
+       printf("enter number of rows to print pyramid; \n");
+        scanf("%d",&rows);
+       for(int i=1; i<=rows; i++){
+            //print spaces
+        for(space=1; space<=rows-i; space++){
+            printf(" ");
+        }
+        //print stars
+        for(star=1; star <= 2*i-1; star++){
+            printf("*");
+        }
+        printf("\n");
+       }
+
+
+      return 0;
+}

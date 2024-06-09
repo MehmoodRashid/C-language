@@ -1,0 +1,48 @@
+//grading system
+#include<stdio.h>
+int main()
+{
+    float urdu,phy,chem,math,eng,avg,per; //declare urdu,phy,chem,math,eng,avg,percent;
+    printf("enter numbers of urdu :");
+     scanf("%f",&urdu);        //input urdu
+    printf("enter numbers of phy :");
+     scanf("%f",&phy);         //input phy
+    printf("enter numbers of chem :");
+     scanf("%f",&chem);        //input chem
+    printf("enter numbers of math :");
+     scanf("%f",&math);        //input math
+    printf("enter numbers of eng :");
+     scanf("%f",&eng);         //input eng
+  //compute
+  avg=(urdu+phy+chem+math+eng)/500;
+  per=avg * 100;
+  //output
+  printf("avg =%f\n",avg);
+   printf("percentage =%f\n",per);
+
+ if(per>=90 && per<=100)
+ {
+     printf("grade is A\n");
+ }
+  else if (per>=80 && per<=90)
+ {
+     printf("grade is B\n");
+ }
+  else if (per>=70 && per<=80)
+ {
+     printf("grade is C\n");
+ }
+ else if (per>=60 && per<=70)
+ {
+     printf("grade is D\n");
+ }
+ else if (per>=50 && per<=60)
+ {
+     printf("grade is E\n");
+ }
+ else
+ {
+     printf("student is FAIL !");
+ }
+    return 0;
+}
