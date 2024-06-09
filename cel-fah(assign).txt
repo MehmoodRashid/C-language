@@ -1,0 +1,16 @@
+//assignment of FOP.
+//celsius into fahrenhiet.
+#include<stdio.h>
+#define fz 32.0
+#define con 5.0/9.0
+int main()
+{
+    float cel;
+    float fah;
+    printf("ENTER YOUR FAHRENHIET TEMP.  : ");
+    scanf("%f",&fah);
+    cel= con * (fah - fz);
+    printf("cel=%f\n",cel);
+
+    return 0;
+}

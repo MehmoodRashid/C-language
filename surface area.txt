@@ -1,0 +1,25 @@
+//calculate surface area and volume for the box
+
+#include<stdio.h>
+#define pi 3.1428
+int main()
+{
+    float volume,l,w,h,area,rad;
+//for volume
+     printf("ENTER LENGTH ");
+      scanf("%f",&l);
+     printf("ENTER WIDTH ");
+      scanf("%f",&w);
+     printf("ENTER HEIGHT ");
+      scanf("%f",&h);
+//for radius
+          printf("ENTER RADIUS ");
+          scanf("%f",&rad);
+//formula for volume & area
+     volume=l*w*h;
+     area=pi * rad*rad;
+
+printf("volume=%f\n",volume);
+printf("area=%f",area);
+    return 0;
+}
